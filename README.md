@@ -1,3 +1,5 @@
+# inicializar com npm
+npm init
 ## Instalar Express
  - npm install express --save
 

@@ -3,8 +3,8 @@
 
     const app = express()
 
-    const categorias = require('./categorias.js')
-    const getCategorias = await categorias.selectCategorias()
+    // const categorias = require('./categorias.js')
+    // const getCategorias = await categorias.selectCategorias()
 
     app.get('/', (req, res) => {
         res.sendFile(`${__dirname}/docs/index.html`)
@@ -23,9 +23,9 @@
     })
 
     app.get('/categorias', (req, res) => {
-      res.writeHead(200, { 'Contant-Type': 'text/json;charset=utf-8' })
-      res.end(getCategorias)
-  })
+        res.writeHead(200, { 'Contant-Type': 'text/json;charset=utf-8' })
+        res.end(getCategorias)
+    })
 
     app.listen(3000, () => {
         console.log('Server em atividade porta: 3000')
