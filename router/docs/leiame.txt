@@ -1,0 +1,2 @@
+Exemplo de leitura de arquivos estáticos
+Lorem  Ipsum Dolor
